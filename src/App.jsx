@@ -22,7 +22,7 @@ function App() {
           la cuenta es {count}
         </button>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          Edit2 <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
       <p className="read-the-docs">

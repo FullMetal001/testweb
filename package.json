@@ -5,9 +5,7 @@
   "type": "module",
   "homepage": "https://fullmetal001.github.io/PruebaWeb",
   "scripts": {
-    "dev": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
+    "dev": "vite",    
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
