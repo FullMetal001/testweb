@@ -50,6 +50,7 @@ const Home = () => {
         {proyectos.map((proyecto, index) => (
           <ProyectoItem
             key={proyecto.id}
+            id={proyecto.id}
             imagen={proyecto.imagen}
             titulo={proyecto.titulo}
             descripcion={proyecto.descripcion}
