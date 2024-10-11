@@ -8,25 +8,25 @@ const Home = () => {
         {
           id: 1,
           titulo: 'Proyecto 1',
-          imagen: '/src/assets/Hexagono.jpg',
+          imagen: '/images/Hexagono.jpg',
           descripcion: 'Descripción detallada del Proyecto 1. Aquí puedes explicar las tecnologías utilizadas, el propósito del proyecto y tus logros.'
         },
         {
           id: 2,
           titulo: 'Proyecto 2',
-          imagen: '/src/assets/Hexagono.jpg',
+          imagen: '/images/Hexagono.jpg',
           descripcion: 'Información sobre el Proyecto 2. Destaca los aspectos más interesantes y las habilidades que demostraste.'
         },  
         {
             id: 3,
             titulo: 'Proyecto 3',
-            imagen: '/src/assets/Hexagono.jpg',
+            imagen: '/images/Hexagono.jpg',
             descripcion: 'Información sobre el Proyecto 3. Destaca los aspectos más interesantes y las habilidades que demostraste.'
           },  
           {
             id: 4,
             titulo: 'Proyecto 4',
-            imagen: '/src/assets/Hexagono.jpg',
+            imagen: '/images/Hexagono.jpg',
             descripcion: 'Información sobre el Proyecto 4. Destaca los aspectos más interesantes y las habilidades que demostraste.'
           },     
       ];
