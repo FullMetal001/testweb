@@ -1,10 +1,30 @@
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import TopBar from '../components/TopBar';
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+  const [showScroll, setShowScroll] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleScroll = () => {
+    if (window.scrollY > 200) {
+      setShowScroll(true);
+    } else {
+      setShowScroll(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
   const proyectosRef = useRef([]);
 
   useEffect(() => {
@@ -83,6 +103,11 @@ const Home = () => {
           </div>
         ))}
       </div>
+      {showScroll && (
+        <button onClick={scrollToTop} className="scroll-to-top">
+          <span className='flecha'>↑</span> 
+        </button>
+      )}
     </div>
   )
 }
