@@ -1,6 +1,7 @@
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
 import TopBar from '../components/TopBar';
+import Footer from '../components/Footer';
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -55,9 +56,9 @@ const Home = () => {
     const proyectos = [
         {
           id: 1,
-          titulo: 'Proyecto 1',
+          titulo: 'Healthy Coffee',
           imagen: '/images/bg2.jpg',
-          descripcion: 'Descripción detallada del Proyecto 1. Aquí puedes explicar las tecnologías utilizadas, el propósito del proyecto y tus logros.'
+          descripcion: 'Este proyecto contiene información sobre los beneficios del café y cómo conseguirlo.'
         },
         {
           id: 2,
@@ -84,6 +85,7 @@ const Home = () => {
         <HeroSection />
         <InfoSection />
         <div className="proyectos-contenedor">
+          <div className='proyectos-titulo'><h2>MY PROJECTS</h2></div>
         {proyectos.map((proyecto, index) => (
           <div 
             key={proyecto.id} 
@@ -103,6 +105,7 @@ const Home = () => {
           </div>
         ))}
       </div>
+      <Footer />
       {showScroll && (
         <button onClick={scrollToTop} className="scroll-to-top">
           <span className='flecha'>↑</span> 

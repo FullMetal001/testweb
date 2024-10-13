@@ -43,21 +43,6 @@ body {
     letter-spacing: 2px;
     white-space: nowrap; /* Evita que el título se divida en múltiples líneas */
    }
-  
-  .redes-sociales {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .redes-sociales a {
-    color: white;
-    font-size: 1.9rem;
-    transition: color 0.3s ease;
-  }
-  
-  .redes-sociales a:hover {
-    color: #03d5ff;
-  } 
 
   .hero-section {
     background-color: hsla(222, 90%, 42%, 1);
@@ -66,8 +51,7 @@ body {
     width: 100%;
     margin-top: 0; /* Ajusta este valor para que coincida con la altura de tu TopBar */
     box-sizing: border-box; /* Incluye el padding en el ancho total */
-  }
-  
+  }  
   .hero-image {
     width: 30px; /* Ajusta este valor según el tamaño que desees */
     height: auto; /* Mantiene la proporción de la imagen */
@@ -75,13 +59,11 @@ body {
     margin-bottom: 20px; 
     animation: rotate 8s linear infinite;    
     transition: all 0.3s ease; 
-  }  
-
+  } 
   .hero-image:hover {
     transform: scale(1.1);
     animation-play-state: paused;
-  }
-  
+  }  
   .hero-text {
     font-size: 2.9rem;
     color: white;
@@ -91,7 +73,6 @@ body {
     margin: 0;
     white-space: nowrap;
   }
-
   .hero-text2 {
     font-size: 1.3rem;
     color: white;
@@ -100,7 +81,6 @@ body {
     font-style: normal;
     margin: 0;
   }
-
   .hero-text3 {
     font-size: 1.3em;
     color: white;
@@ -129,13 +109,11 @@ body {
     min-height: 200px;
     max-height: 400px;    
     overflow: hidden;
-  }
-  
+  }  
   .info-text {
     flex: 1; 
     padding-right: 20px;    
-  }
-  
+  }  
   .info-text h2 {
     font-family: 'Bebas Neue', sans-serif;
     font-weight: normal;
@@ -180,68 +158,97 @@ body {
     width: 100%;
     box-sizing: border-box;
     gap: 40px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px 20px;
+    margin-top: 5px;      
+    padding: 0 0;
     background-image: url('/images/bg1.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;      
   }
-
+  .proyectos-titulo {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    margin-top: 0;    
+    width: 100%;
+    height: 70px;
+    text-align: center;    
+  }
+  .proyectos-titulo h2 { 
+    margin: 0;   
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-size: 3rem;
+  }
+  .proyectos-titulo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, hsla(222, 72%, 7%, 1), rgba(15, 84, 233, 0)); 
+    z-index: -1; 
+  }
   .proyecto-item {
     display: flex;    
     gap: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #0E1789;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    /*border: 3px solid #167a9c; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);    
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease, transform 0.5s ease; 
     max-width: 1000px; 
-    width: 100%;  
+    width: calc(100% - 40px); 
+    margin: 0 20px 20px;    
   }
-
   .proyecto-item.visible {
     opacity: 1;
     transform: translateY(0);
   }
-
   .proyecto-item.invertir {
     flex-direction: row-reverse;
   }
-  
   .proyecto-imagen {
     flex: 1;
     max-width: 50%;
   }
-
   .proyecto-imagen img {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 8px; 
   }
-
   .proyecto-info {
     flex: 1;
     padding: 20px;
     text-align: center;
-  }
-  
+  }  
   .proyecto-info h2 {
     margin-top: 0;
-    color: hsla(222, 90%, 42%);
-  }
-  
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    letter-spacing: 3px;
+    font-size: 2rem;    
+  }  
   .proyecto-info p {
-    line-height: 1.6;
+    line-height: 1.2;
     text-align: justify;
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+    font-size: 1.3rem;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    word-break: break-word;
   }
-
   .boton-mas-info {
     display: inline-block;
     padding: 10px 20px;
@@ -251,8 +258,7 @@ body {
     border-radius: 5px;
     transition: background-color 0.3s ease;
     margin-top: 15px;
-  }
-  
+  }  
   .boton-mas-info:hover {
     background-color: rgb(74, 129, 255);
   }
@@ -277,6 +283,34 @@ body {
     font-size: 2em;
   }
 
+  .footer {
+    background-color: rgb(9, 9, 9); /* Color de fondo negro */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
+  }  
+  .footer-content {
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido */
+  }  
+  .footer h3 {
+    margin: 0; /* Elimina el margen por defecto */
+  }  
+  .social-icons {
+    display: flex; /* Usa flexbox para alinear los íconos */
+    justify-content: center; /* Centra los íconos */
+    gap: 15px; /* Espacio entre los íconos */
+    margin-top: 10px; /* Espacio superior */
+  }  
+  .social-icons a {
+    color: white; /* Color de los íconos */
+    font-size: 1.5rem; /* Tamaño de los íconos */
+    transition: color 0.3s ease; /* Transición suave para el color */
+  }  
+  .social-icons a:hover {
+    color: #03d5ff; /* Color al pasar el mouse */
+  }
+
   .scroll-to-top {
     position: fixed; /* Fija el botón en la pantalla */
     bottom: 20px; /* Distancia desde la parte inferior */
@@ -293,7 +327,7 @@ body {
     display: flex; /* Para centrar el contenido */
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
-  }  
+  }
   .scroll-to-top:hover {
     background-color: #ffcd6f; /* Color de fondo al pasar el mouse */
   }  
@@ -342,7 +376,14 @@ body {
     .info-image-container {
       display: none; /* Oculta la imagen en pantallas pequeñas */
     }
-
+    .proyecto-info h2 {      
+      font-size: 1.4rem;    
+    }  
+    .proyecto-info p {
+      line-height: 1.2;      
+      letter-spacing: 0px;
+      font-size: 1.1rem;      
+    }
     .proyecto-item,.proyecto-item.invertir {
       flex-direction: column !important;
     }
@@ -352,7 +393,10 @@ body {
     }
     .proyecto-info {
         width: 90%;
-    } 
+    }     
+    .proyectos-titulo h2 {
+      font-size: 1.5rem;
+    }
     
     .not-found {
       margin: 0px;
