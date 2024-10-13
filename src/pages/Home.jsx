@@ -1,5 +1,6 @@
 import HeroSection from '../components/HeroSection';
 import InfoSection from '../components/InfoSection';
+import TopBar from '../components/TopBar';
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -58,7 +59,8 @@ const Home = () => {
           },     
       ];
   return (
-    <div className="home">  
+    <div className="home"> 
+        <TopBar /> 
         <HeroSection />
         <InfoSection />
         <div className="proyectos-contenedor">
