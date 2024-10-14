@@ -211,8 +211,7 @@ body {
   .proyecto-item.invertir {
     flex-direction: row-reverse;
   }
-  .proyecto-imagen {
-    background-color: black;
+  .proyecto-imagen {   
     flex: 1;
     max-width: 50%;
     height: 300px; 
