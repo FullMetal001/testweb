@@ -57,7 +57,7 @@ const Home = () => {
         {
           id: 1,
           titulo: 'Healthy Coffee',
-          imagen: '/images/bg2.jpg',
+          imagen: '/images/c2.jpg',
           descripcion: 'Este proyecto contiene información sobre los beneficios del café y cómo conseguirlo.'
         },
         {

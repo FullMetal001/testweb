@@ -22,6 +22,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
+      <div className='footer-linea'></div>
     </footer>
   );
 };
