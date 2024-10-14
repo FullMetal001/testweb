@@ -4,9 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    /* Asegúrate de ajustar la ruta de la imagen según donde la hayas guardado */
-    /*background-image: url('/src/assets/Hexagono.jpg');*/
+    font-family: Arial, sans-serif;    
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -14,41 +12,61 @@ body {
     min-height: 100vh;
   }  
 
-  .contenedor-principal {
-    margin-top: 0;
-    padding: 0;
-  }
+.contenedor-principal {
+  margin-top: 0;
+  padding: 0;
+}
 
-  .top-bar {
-    background-color: rgb(11, 69, 203); /* Color de fondo semi-transparente */
-    width: 100%;
-    position: static; 
-    padding: 20px 0 20px;
-  }  
-  .top-bar-content {
-    display: flex;
-    justify-content: space-between;    
-    padding: 0 20px;
-    max-width: 100%;
-    margin: 0 auto;
-  }  
-  .top-bar-title {
-    color: white;
-    margin: 0;
-    font-size: 1.5rem;
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: normal;
-    letter-spacing: 2px;
-    white-space: nowrap; /* Evita que el título se divida en múltiples líneas */
-   }
+.top-bar {
+  display: flex;
+  align-items: center;
+  background-color: rgb(11, 69, 203);
+  width: 100%;
+  position: static; 
+  padding: 20px 0 20px;
+}  
+.top-bar-content {
+  display: flex;
+  justify-content: space-between;    
+  padding: 0 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
+}  
+.top-bar-title {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: normal;
+  letter-spacing: 2px;
+  white-space: nowrap; 
+  padding-left: 20px;
+ }  
+.topbar-button{
+  display: flex; 
+  align-items: center;
+  padding-right: 20px;
+}
+.language-button {
+  background: none; 
+  border: none; 
+  cursor: pointer; 
+  margin-left: 10px;
+}
+.language-button img {
+  width: 50px; 
+  height: auto; 
+}
+
 
   .hero-section {
     background-color: hsla(222, 90%, 42%, 1);
-    padding: 10px 0 100px; /* Añadimos padding horizontal */    
+    padding: 10px 0 100px;    
     text-align: center;
     width: 100%;
-    margin-top: 0; /* Ajusta este valor para que coincida con la altura de tu TopBar */
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    margin-top: 0; 
+    box-sizing: border-box; 
   }  
   .hero-image {
     width: 30px; /* Ajusta este valor según el tamaño que desees */

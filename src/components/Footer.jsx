@@ -1,11 +1,18 @@
 
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'; // Asegúrate de tener react-icons instalado
+import React, { useContext } from 'react';
+import { LanguageContext } from './LanguageContext';
 
 const Footer = () => {
+  const { language } = useContext(LanguageContext);
+  const texto = {
+    es: 'Contacto',
+    en: 'Contact'
+  }
   return (
     <footer className="footer">
       <div className="footer-content">
-        <h3>Contacto</h3>
+        <h3>{texto[language]}</h3>
         <p>Email: Jesus@gmail.com</p>
         <div className="social-icons">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
