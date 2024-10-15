@@ -67,14 +67,15 @@ const Home = () => {
     {
       id: 1,
       titulo: {
-        es: 'Café Saludable',
-        en: 'Healthy Coffee'
+        es: 'Oscar Café',
+        en: 'Oscar Coffee'
       },
-      imagen: '/images/c2.jpg',
+      imagen: '/images/coffee.png',
       descripcion: {
-        es: 'Este proyecto contiene información sobre los beneficios del café y cómo conseguirlo.',
-        en: 'This project contains information about the benefits of coffee and how to obtain it.'
-      }
+        es: 'Este proyecto sencillo contiene menú desplegable, con dirección en google maps y una lista de items. Página responsiva adaptable a pantallas grandes y pequeñas.',
+        en: 'This simple project contains drop down menu, with google maps address and a list of items. Responsive page adaptable to large and small screens.'
+      },
+      url: 'https://coffee-web-healthy.netlify.app/'
     },
     {
       id: 2,
@@ -86,7 +87,8 @@ const Home = () => {
       descripcion: {
         es: 'Información sobre el Proyecto 2. Destaca los aspectos más interesantes y las habilidades que demostraste.',
         en: 'Information about Project 2. Highlights the most interesting aspects and the skills you demonstrated.'
-      }
+      },
+      url: '/proyecto/1'
     },
     {
       id: 3,
@@ -98,7 +100,8 @@ const Home = () => {
       descripcion: {
         es: 'Información sobre el Proyecto 3. Destaca los aspectos más interesantes y las habilidades que demostraste.',
         en: 'Information about Project 3. Highlights the most interesting aspects and the skills you demonstrated.'
-      }
+      },
+      url: '/proyecto/1'
     },
     {
       id: 4,
@@ -110,7 +113,8 @@ const Home = () => {
       descripcion: {
         es: 'Información sobre el Proyecto 4. Destaca los aspectos más interesantes y las habilidades que demostraste.',
         en: 'Information about Project 4. Highlights the most interesting aspects and the skills you demonstrated.'
-      }
+      },
+      url: '/proyecto/1'
     },
   ];
     
@@ -134,7 +138,7 @@ const Home = () => {
             <div className="proyecto-info">
               <h2>{proyecto.titulo[language]}</h2>
               <p>{proyecto.descripcion[language]}</p>
-              <Link to={`/proyecto/${proyecto.id}`} className="boton-mas-info">
+              <Link to={proyecto.url} className="boton-mas-info">
                 {proyectoidioma[0].boton[language]}
               </Link>
             </div>
