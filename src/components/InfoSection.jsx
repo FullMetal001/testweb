@@ -6,11 +6,11 @@ function InfoSection() {
   const texts = {
     es: {
       tittle: 'Acerca de mis proyectos',      
-      texto: 'Transformo ideas en experiencias digitales únicas. Como desarrollador web apasionado, me especializo en crear sitios web dinámicos y atractivos que no solo capturan la esencia de tu marca, sino que también ofrecen una experiencia de usuario excepcional.'
+      texto: 'Transformo ideas en experiencias digitales únicas. Como desarrollador web apasionado, me especializo en crear sitios web dinámicos y atractivos que capturan la esencia de tu marca y también ofrecen una experiencia de usuario excepcional.'
     },
     en: {
       tittle: 'About My Projects',      
-      texto: 'I transform ideas into unique digital experiences. As a passionate web developer, I specialize in creating dynamic and engaging websites that not only capture the essence of your brand, but also deliver an exceptional user experience.'
+      texto: 'I transform ideas into unique digital experiences. As a passionate web developer, I specialize in creating dynamic and engaging websites that capture the essence of your brand and also deliver an exceptional user experience.'
     }
   }
   return (
