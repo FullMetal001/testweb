@@ -80,15 +80,15 @@ const Home = () => {
     {
       id: 2,
       titulo: {
-        es: 'Proyecto 2',
-        en: 'Project 2'
+        es: 'Warframe Wiki',
+        en: 'Warframe Wiki'
       },
-      imagen: '/images/bg1.jpg',
+      imagen: '/images/warframe.png',
       descripcion: {
-        es: 'Información sobre el Proyecto 2. Destaca los aspectos más interesantes y las habilidades que demostraste.',
-        en: 'Information about Project 2. Highlights the most interesting aspects and the skills you demonstrated.'
+        es: 'Dedicado al vídeo juego Warframe, contiene información sobre algunos jugadores y armas, con buenos estilos visuales, adaptable tanto en pc y celulares.',
+        en: 'Dedicated to the video game Warframe, contains information about some players and weapons, with good visual styles, adaptable both on pc and cell phones.'
       },
-      url: '/proyecto/1'
+      url: 'https://warframe-wiki.netlify.app/'
     },
     {
       id: 3,
