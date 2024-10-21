@@ -38,6 +38,8 @@ const Home = () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
         }
       });
     }, observerOptions);
@@ -93,15 +95,15 @@ const Home = () => {
     {
       id: 3,
       titulo: {
-        es: 'Proyecto 3',
-        en: 'Project 3'
+        es: 'Portafolio fotográfico',
+        en: 'Photography Portfolio'
       },
-      imagen: '/images/bg2.jpg',
+      imagen: '/images/photography.png',
       descripcion: {
-        es: 'Información sobre el Proyecto 3. Destaca los aspectos más interesantes y las habilidades que demostraste.',
-        en: 'Information about Project 3. Highlights the most interesting aspects and the skills you demonstrated.'
+        es: 'Proyecto mostrando efectos visuales, temática sobre un fotógrafo mostrando su arte y trabajo.',
+        en: 'Project showing visual effects, themed around a photographer showing his art and work.'
       },
-      url: '/proyecto/1'
+      url: 'https://photographygaby.netlify.app/'
     },
     {
       id: 4,
