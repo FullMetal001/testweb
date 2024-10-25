@@ -122,10 +122,13 @@ const Home = () => {
     
   return (
     <div className="home">
-      <div className='bg-hex'>        
-        <TopBar /> 
-        <HeroSection />
-      </div> 
+      <div className='bg-hex'>
+        <img src='/images/bghex2.png' className='hex-logo' alt="Hex Logo" />
+        <div className="content-wrapper">
+          <TopBar />
+          <HeroSection />
+        </div>
+      </div>
         <InfoSection />
         <div className="proyectos-contenedor">
           <div className='proyectos-titulo'>          
