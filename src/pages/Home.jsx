@@ -122,15 +122,7 @@ const Home = () => {
     
   return (
     <div className="home">
-      <div className='bg-hex'>
-        <div className='box'>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+      <div className='bg-hex'>        
         <TopBar /> 
         <HeroSection />
       </div> 

@@ -19,45 +19,17 @@ body {
 
 .bg-hex {
   overflow: hidden;
-  background: linear-gradient(90deg, rgba(2, 0,121, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  background: linear-gradient(90deg, rgba(2, 0,121, 1) 0%, rgb(9, 9, 121) 15%, rgb(13, 13, 171) 35%, rgb(9, 61, 104) 55%, rgb(14, 159, 187) 75%, rgba(0, 212, 255, 1) 100%);
+  background-size: 400% 400%;
+  background-position: 200%;
+  animation: gradient 10s infinite;
 }
-.box div {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  border: 6px solid rgba(255, 255, 255, 0.8);
+@keyframes gradient {
+  0% {background-position: 0%; }
+  50% {background-position: 100%; }
+  100% {background-position: 0%; }
 }
-.box div:nth-child(1) {
-  top: 50%;
-  left: 10%;
-  animation: animate 10s linear infinite;
-}
-.box div:nth-child(2) {
-  top: 45%;
-  left: 80%;
-  animation: animate 10s linear infinite;
-}
-.box div:nth-child(3) {
-  top: 25%;
-  left: 30%;
-  animation: animate 10s linear infinite;
-}
-.box div:nth-child(4) {
-  top: 65%;
-  left: 50%;
-  animation: animate 10s linear infinite;
-}
-.box div:nth-child(5) {
-  top: 15%;
-  left: 85%;
-  animation: animate 10s linear infinite;
-}
-.box div:nth-child(6) {
-  top: 10%;
-  left: 10%;
-  animation: animate 10s linear infinite;
-}
+
 
 .top-bar {
   display: flex;
@@ -456,16 +428,8 @@ body {
     transition-duration: 0.3s;
   }
 
- @keyframes animate {
-  0% {
-    transform: scale(0) translateY(0) rotate(0deg);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1.3) translateY(-90px) rotate(360deg);
-    opacity: 0;
-  }
- }
+  
+
 @keyframes btnpulse {
   0% {
     box-shadow: 0 0 0 0 #3392f7;
@@ -479,32 +443,7 @@ body {
 @media (max-width: 768px) {
     body {
       background-attachment: scroll;
-    }   
-
-    .box div:nth-child(1) {
-      top: 35%;
-      left: 10%;      
-    }
-    .box div:nth-child(2) {
-      top: 40%;
-      left: 80%;      
-    }
-    .box div:nth-child(3) {
-      top: 25%;
-      left: 40%;      
-    }
-    .box div:nth-child(4) {
-      top: 45%;
-      left: 50%;      
-    }
-    .box div:nth-child(5) {
-      top: 15%;
-      left: 85%;      
-    }
-    .box div:nth-child(6) {
-      top: 10%;
-      left: 10%;      
-    }
+    }       
 
     .top-bar-title {      
       font-size: 1.05rem;
